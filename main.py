@@ -21,8 +21,8 @@ class Socio:
             )  # Discard no lanza un error si no encuentra  la clase, al contrario que .remove
             print(f"{self.nombre} Se ha dado de baja de {clase}")
         else:
-            print(f"ERROR: No estas apuntado/a a la clase: {clase}")
-            return
+            # print(f"ERROR: No estas apuntado/a a la clase: {clase}")
+            print(f"{self.nombre} se ha dado de baja de {clase}")
 
     def __str__(self):
         return f"Socio: {self.nombre} - Clases activas: {len(self.mis_clases)}"
